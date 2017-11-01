@@ -1,0 +1,6 @@
+.section {
+  height: 100vh; }
+
+.section__main {
+  background-color: grey;
+  background: url("../image/bg/bg-1.png") no-repeat cover; }

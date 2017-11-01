@@ -1,0 +1,123 @@
+.greeting {
+    background-color: grey;
+    background: url("../image/bg/bg-1.png");
+    background-size: cover;
+    padding-top: 12px;
+    box-sizing: border-box;
+    position: relative;
+}
+.container {
+    // width: 970px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    // width: 1060px;
+}
+.header {
+    // width: 1100px;
+    display: flex;
+    justify-content: center;
+}
+.header__container {
+    width: 960px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header__logo {
+    width: 90px;
+    height: 70px;
+}
+.logo__link {
+    display: block;
+}
+// .logo__pic {
+//     min-width: 100%;
+//     min-height: 100%;
+// }
+// .nav__list {
+//     text-transform: uppercase;
+// }
+.header__nav {
+    display: flex;
+    align-items: center;
+    // margin-left: 250px;
+}
+.nav__list {
+    display: flex;
+    list-style-type: none;
+
+}
+// .nav__list {
+//     list-style-type: none;
+//     // margin: 0;
+//     // padding: 0;
+//     display: flex;
+//     justify-content: space-around;
+// }
+.nav__link {
+    text-transform: uppercase;
+    font-family: "UbuntuMedium", sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    text-decoration: none;
+    // display: block;
+    margin: 10px;
+}
+.nav__order {
+    display: block;
+    background-color: #e45028;
+    padding: 15px;
+    border-radius: 4px;
+}
+.greeting__intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+.greeting__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.nav__item:not(:last-child):after {
+    display: inline-block;
+    content: "•";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    color: #ffffff;
+
+}
+.greeting__first {
+    text-transform: uppercase;
+    font-family: 'gagalinregular';
+    font-size: 72px;
+    color: #f9b43b;
+}
+.greeting__second {
+    font-family: 'lifehackmedium';
+    font-size: 65px;
+    color: #fff;
+}
+.greeting__pic {
+    min-width: 100%;
+}
+.arrow {
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow__pic {
+    width: 29px;
+    height: 14px;
+    display: inline-block;
+}
