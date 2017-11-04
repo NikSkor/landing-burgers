@@ -260,7 +260,7 @@ h2 {
   text-transform: uppercase;
   font-family: 'gagalinregular';
   font-size: 72px;
-  color: #f000;
+  color: #000000;
   padding-bottom: 60px; }
 
 .about__list {
@@ -303,14 +303,14 @@ h2 {
 .about__title {
   font-family: 'lifehackmedium';
   font-size: 24.1px;
-  color: #f000;
+  color: #000000;
   margin-bottom: 20px;
   text-align: center; }
 
 .about__text {
   font-family: "UbuntuLight";
   font-size: 14.03px;
-  color: #f000;
+  color: #000000;
   line-height: 24.01px; }
 
 .feeds {
