@@ -1,6 +1,6 @@
 .best {
     background-color: grey;
-    background: url("../../image/bg/bg-2.png");
+    background: url("../image/bg/bg-2.png");
     background-size: cover;
     // padding-top: 12px;
     box-sizing: border-box;
@@ -13,7 +13,7 @@
     text-transform: uppercase;
     font-family: 'gagalinregular';
     font-size: 72px;
-    color: #f000;
+    color: #000000;
     padding-bottom: 60px;
 }
 .about__list {
@@ -43,13 +43,13 @@
 .about__title {
     font-family: 'lifehackmedium';
     font-size: 24.1px;
-    color: #f000;
+    color: #000000;
     margin-bottom: 20px;
     text-align: center;
 }
 .about__text {
     font-family: "UbuntuLight";
     font-size: 14.03px;
-    color: #f000;
+    color: #000000;
     line-height: 24.01px;
 }
