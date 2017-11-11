@@ -8,6 +8,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+li {
+    list-style-type: none;
+}
 .wrapper {
     position: relative;
     min-height: 100%;
@@ -17,6 +20,8 @@ body {
     height: 100vh;
     min-height: 650px;
     display: block;
+    background-color: $grey;
+
 }
 .intro {
     margin: 0 auto;
@@ -32,4 +37,10 @@ table {
 }
 * {
     box-sizing: border-box;
+}
+.main-title {
+    text-transform: uppercase;
+    font-family: 'gagalinregular';
+    font-size: 72px;
+    color: $yellow;
 }

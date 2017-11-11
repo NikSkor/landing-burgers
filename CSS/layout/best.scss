@@ -1,5 +1,4 @@
 .best {
-    background-color: $grey;
     background: url("../image/bg/bg-2.png");
     background-size: cover;
     display: flex;
@@ -7,9 +6,6 @@
 }
 .about__best {
     text-align: center;
-    text-transform: uppercase;
-    font-family: 'gagalinregular';
-    font-size: 72px;
     color: $black;
     padding-bottom: 60px;
 }
@@ -25,6 +21,10 @@
     flex-direction: column;
     align-items: center;
     flex:1;
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 .about__head {
     margin-bottom: 35px;

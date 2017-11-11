@@ -1,0 +1,99 @@
+.menu {
+    background: url("../image/bg/bg-menu.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.menu__container {
+    width: 100vh;
+}
+.menu-acc {
+    display: flex;
+    position: absolute;
+    // flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    // width: 25%;
+    // transform: rotate(-90deg);
+    height: 100vh;
+}
+.menu-acc__title {
+    position: absolute;
+    margin: 0;
+    top: 25%;
+    left: -5%;
+    transform: rotate(-90deg) translate(-50%, -50%);
+}
+.menu-acc__item {
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    // flex-direction: column;
+    max-width: 45rem;
+
+    
+}
+.menu-acc__cont {
+    width: 6rem;
+}   
+.menu-acc__link {
+    display: block;
+    position: relative;
+    width: 60rem;
+    height: 100vh;
+    white-space: nowrap;
+    &-meat {
+        background: url('../../image/content/meatlove.png') center center no-repeat;
+        background-size: cover;
+    }
+    &-vegan {
+        background: url('../../image/content/vegan.png') center center no-repeat;
+        background-size: cover;
+    }
+    &-diet {
+        background: url('../../image/content/diet.png') center center no-repeat;
+        background-size: cover;
+    }
+
+    // &:before {
+    // content: "";
+    // position: absolute;
+    // background: rgba(0, 0, 0, 0.6);
+    // top: 0;
+    // right: 0;
+    // left: 0;
+    // bottom: 0;
+    // }
+}
+.menu__title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: $white;
+}
+.menu-acc__link {
+    text-transform: uppercase;
+    font-family: 'gagalinregular';
+    font-size: 40px;
+    color: $white;
+    text-decoration: none;
+    text-align: center;
+    // display: inline-block;
+    // position: absolute;
+    // transform: rotate(-90deg);
+    
+}
+.menu-acc__text {
+    font-family: "UbuntuRegular";
+    font-size: 14px;
+    color: $white;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    // width: 300rem;
+    width: 0;
+    overflow: hidden;
+}
