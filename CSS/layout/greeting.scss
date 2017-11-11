@@ -1,16 +1,17 @@
 .greeting {
-    background-color: grey;
+    background-color: $grey;
     background: url("../image/bg/bg-1.png");
     background-size: cover;
     padding-top: 12px;
-    box-sizing: border-box;
     position: relative;
 }
 .header__container {
     width: 960px;
+}
+.header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+
 }
 .header__logo {
     width: 90px;
@@ -31,7 +32,7 @@
     text-transform: uppercase;
     font-family: "UbuntuMedium", sans-serif;
     font-size: 13px;
-    color: #ffffff;
+    color: $white;
     text-decoration: none;
     margin: 10px;
 }
@@ -66,7 +67,7 @@
     width: 3px;
     height: 3px;
     border-radius: 50%;
-    color: #ffffff;
+    color: $white;
 
 }
 .greeting__first {
@@ -78,7 +79,7 @@
 .greeting__second {
     font-family: 'lifehackmedium';
     font-size: 65px;
-    color: #fff;
+    color: $white;
 }
 .greeting__pic {
     min-width: 100%;

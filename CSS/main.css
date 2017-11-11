@@ -69,12 +69,15 @@
   font-weight: normal;
   font-style: normal; }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .wrapper {
   position: relative;
@@ -92,29 +95,31 @@ body {
 .container {
   width: 970px;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   margin: 0 auto; }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .greeting {
-  background-color: grey;
+  background-color: #999999;
   background: url("../image/bg/bg-1.png");
   background-size: cover;
   padding-top: 12px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   position: relative; }
 
 .header__container {
-  width: 960px;
+  width: 960px; }
+
+.header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -215,7 +220,7 @@ body {
 .greeting__second {
   font-family: 'lifehackmedium';
   font-size: 65px;
-  color: #fff; }
+  color: #ffffff; }
 
 .greeting__pic {
   min-width: 100%; }
@@ -234,11 +239,9 @@ body {
   display: inline-block; }
 
 .best {
-  background-color: grey;
+  background-color: #999999;
   background: url("../image/bg/bg-2.png");
   background-size: cover;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -267,8 +270,6 @@ body {
 
 .about__item {
   text-align: center;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -306,7 +307,7 @@ body {
   line-height: 24.01px; }
 
 .feeds {
-  background-color: grey; }
+  background-color: #999999; }
 
 .feeds__container {
   width: 100%;
@@ -339,8 +340,6 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   background-color: rgba(20, 20, 20, 0.7);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   height: 100%;
   overflow: hidden;
   opacity: 0;
@@ -401,7 +400,7 @@ body {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 1px solid #fff; }
+    border: 1px solid #ffffff; }
   .pagination__link_active:after {
     content: "";
     position: absolute;
@@ -410,6 +409,6 @@ body {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 1px solid #fff; }
+    border: 1px solid #ffffff; }
 
 /*# sourceMappingURL=main.css.map */
