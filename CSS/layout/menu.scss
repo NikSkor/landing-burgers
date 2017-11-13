@@ -23,9 +23,9 @@
 .menu-acc__title {
     position: absolute;
     margin: 0;
-    top: 25%;
-    left: -5%;
-    transform: rotate(-90deg) translate(-50%, -50%);
+    top: 50%;
+    left: -5rem;
+    transform: rotate(-90deg) translateY(-50%);
 }
 .menu-acc__item {
     
@@ -33,19 +33,21 @@
     padding-bottom: 25px;
     display: flex;
     // flex-direction: column;
-    max-width: 45rem;
+    max-width: 60rem;
+
+    &:hover {
+        .menu-acc__text {
+            width: 55rem;
+            z-index: 100;
+            padding: 3rem;
+        }
+    }
 
     
 }
 .menu-acc__cont {
-    width: 6rem;
-}   
-.menu-acc__link {
-    display: block;
-    position: relative;
-    width: 60rem;
-    height: 100vh;
-    white-space: nowrap;
+    width: 5rem;
+    
     &-meat {
         background: url('../../image/content/meatlove.png') center center no-repeat;
         background-size: cover;
@@ -58,6 +60,14 @@
         background: url('../../image/content/diet.png') center center no-repeat;
         background-size: cover;
     }
+}   
+.menu-acc__link {
+    display: block;
+    position: relative;
+    width: 5rem;
+    height: 100vh;
+    white-space: nowrap;
+
 
     // &:before {
     // content: "";
@@ -90,10 +100,18 @@
 .menu-acc__text {
     font-family: "UbuntuRegular";
     font-size: 14px;
+    line-height: 2.5;
     color: $white;
     height: 100vh;
+    // padding: 3rem;
     background: rgba(0, 0, 0, 0.6);
     // width: 300rem;
     width: 0;
     overflow: hidden;
+    padding: 0;
+    transition: .8s;
 }
+// .menu-acc__text-active {
+//     width: 39rem;
+//     z-index: 10;
+// }

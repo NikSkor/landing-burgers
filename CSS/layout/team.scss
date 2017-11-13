@@ -29,6 +29,7 @@
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: .8s;
 
     &:before {
         content: "";
@@ -38,6 +39,7 @@
         border-top-color: $yellow;
         border-bottom-width: 0; 
         margin-right: 5px;
+        transition: .8s;
     }
 }
 .team-acco__content {
@@ -45,6 +47,7 @@
     align-items: center;
     height: 0;
     overflow: hidden;
+    transition: .8s;
     }
 .team-acco__item {
     margin-bottom: 20px;

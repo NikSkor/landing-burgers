@@ -149,13 +149,13 @@
                 <div class="container menu__container">
                     <h2 class="main-title menu__title">Меню</h2>
                     <ul class="menu-acc">
-                        <li class="menu-acc__item menu-acc__item-meat">
-                            <div class="menu-acc__cont">
-                                <a href="#" class="menu-acc__link menu-acc__link-meat">
+                        <li class="menu-acc__item">
+                            <div class="menu-acc__cont menu-acc__cont-meat">
+                                <a href="#" class="menu-acc__link">
                                     <span class="menu-acc__title">Для мясоедов</span>
                                 </a>
                             </div>
-                            <div class="menu-acc__text">
+                            <div class="menu-acc__text menu-acc__text-active">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eius ea, aliquid quibusdam, assumenda autem temporibus consectetur, consequuntur nesciunt est ab incidunt molestias cumque ipsum reprehenderit doloremque quam tempore tempora!
                             Itaque beatae autem eveniet suscipit at, totam inventore atque possimus, minus officia optio quae vel nulla iusto ipsa libero laboriosam deleniti aliquam doloribus sit fuga quasi tenetur sunt perspiciatis. Molestiae.
                             Iste quas earum vel dolore quam exercitationem expedita ipsum temporibus accusantium tenetur facere sed ratione alias perferendis magni voluptate nulla non vitae officiis, voluptatibus cum dicta minus. Nihil, eveniet placeat.
@@ -163,9 +163,9 @@
                                 </p>
                             </div>  
                         </li>
-                        <li class="menu-acc__item menu-acc__item-vegan">
-                            <div class="menu-acc__cont">   
-                                <a href="#" class="menu-acc__link menu-acc__link-vegan">
+                        <li class="menu-acc__item">
+                            <div class="menu-acc__cont menu-acc__cont-vegan">   
+                                <a href="#" class="menu-acc__link">
                                     <span class="menu-acc__title">Вегетарианское</span>
                                 </a>
                             </div> 
@@ -178,9 +178,9 @@
                                 </p>
                             </div>  
                         </li>
-                        <li class="menu-acc__item menu-acc__item-diet">
-                            <div class="menu-acc__cont">  
-                                    <a href="#" class="menu-acc__link menu-acc__link-diet">
+                        <li class="menu-acc__item">
+                            <div class="menu-acc__cont menu-acc__cont-diet">  
+                                    <a href="#" class="menu-acc__link">
                                     <span class="menu-acc__title">Диетическое</span>
                                 </a>
                             </div>
@@ -273,6 +273,79 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </section>
+            <section class="section order-form">
+                <div class="container form-container">
+                    <div class="main-title form-title">
+                        Закажите доставку
+                    </div>
+                    <div class="form">
+                        <form action="" class="form__elem">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Имя</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Телефон</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Улица</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Дом</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Корпус</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Квартира</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Этаж</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                            </div>
+                        </form>
+                        <form action="" class="form__elem">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title form__block-title_rew">Комментарий</div>
+                                    <textarea name="" id=""  class="form__textarea form__input"></textarea>
+                                </label>
+                            </div>
+                            <div class="form__row form__row_radio">
+                                <label class="form__block form__block_radio">
+                                    <input type="radio" class="input-radio" name="radio" id="">
+                                    <div class="form__block-title form__block-title-radio">Потребуется сдача</div>
+                                </label>
+                                <label class="form__block form__block_radio">
+                                    <input type="radio" class="input-radio" name="radio" id="">
+                                    <div class="form__block-title form__block-title-radio">Оплата по карте</div>
+                                </label>
+                            </div>
+                            <div class="form__row form__row_checkbox">
+                                <label class="form__block form__block_checkbox">
+                                    <input type="checkbox" class="input-checkbox" name="check" id="">
+                                    <div class="form__block-title form__block-title-checkbox">Не перезванивать</div>
+                                </label>
+                            </div>
+                            <div class="form__row form__row_buttons">
+                                <a href="#" class="nav__link nav__order nav__link_form">заказать</a>
+                                <a href="#" class="nav__link nav__link_form-clear">Очистить</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
             <div class="pagination">
