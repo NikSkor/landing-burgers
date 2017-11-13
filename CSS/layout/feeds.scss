@@ -1,6 +1,6 @@
 .feeds__container {
     width: 100%;
-    height: 960px;
+    height: 100%;
 }
 .feeds__personal {
     margin: 0;
@@ -12,8 +12,9 @@
 }
 .feeds__block {
     background: no-repeat center/cover;
-    
-    flex: 1 0 25%;
+    height: 50vh;
+    width: 25vh;
+        flex: 1 0 25%;
     position: relative;
     &:hover .feeds__about {
         opacity: 1;
