@@ -10,8 +10,8 @@
     display: flex;
     position: absolute;
     // flex-direction: column;
-    align-items: center; 
-    justify-content: center;
+    // align-items: center; 
+    // justify-content: center;
     margin: 0;
     top: 0;
     bottom: 0;
@@ -21,17 +21,20 @@
     height: 100vh;
 }
 .menu-acc__title {
-    position: absolute;
+    // position: absolute;
     margin: 0;
-    top: 50%;
-    left: -5rem;
-    transform: rotate(-90deg) translateY(-50%);
+    // top: 50%;
+    // left: -5rem;
+    display: block;
+    transform: rotate(-90deg);
+    // overflow: hidden;
 }
 .menu-acc__item {
     
-    padding-top: 25px;
-    padding-bottom: 25px;
+    // padding-top: 25px;
+    // padding-bottom: 25px;
     display: flex;
+    // align-items: center;
     // flex-direction: column;
     max-width: 60rem;
 
@@ -47,6 +50,8 @@
 }
 .menu-acc__cont {
     width: 5rem;
+    display: flex;
+    // transform: rotate(-90deg) translateY(-50%);
     
     &-meat {
         background: url('../../image/content/meatlove.png') center center no-repeat;
@@ -62,8 +67,9 @@
     }
 }   
 .menu-acc__link {
+    // transform: rotate(-90deg) translateY(-50%);
     display: block;
-    position: relative;
+    // position: relative;
     width: 5rem;
     height: 100vh;
     white-space: nowrap;
@@ -91,7 +97,7 @@
     font-size: 40px;
     color: $white;
     text-decoration: none;
-    text-align: center;
+    // text-align: center;
     // display: inline-block;
     // position: absolute;
     // transform: rotate(-90deg);

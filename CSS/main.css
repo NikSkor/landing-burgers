@@ -556,14 +556,6 @@ table {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin: 0;
   top: 0;
   bottom: 0;
@@ -571,17 +563,13 @@ table {
   height: 100vh; }
 
 .menu-acc__title {
-  position: absolute;
   margin: 0;
-  top: 50%;
-  left: -5rem;
-  -webkit-transform: rotate(-90deg) translateY(-50%);
-  -ms-transform: rotate(-90deg) translateY(-50%);
-  transform: rotate(-90deg) translateY(-50%); }
+  display: block;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
 
 .menu-acc__item {
-  padding-top: 25px;
-  padding-bottom: 25px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -593,7 +581,11 @@ table {
     padding: 3rem; }
 
 .menu-acc__cont {
-  width: 5rem; }
+  width: 5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   .menu-acc__cont-meat {
     background: url("../../image/content/meatlove.png") center center no-repeat;
     background-size: cover; }
@@ -606,7 +598,6 @@ table {
 
 .menu-acc__link {
   display: block;
-  position: relative;
   width: 5rem;
   height: 100vh;
   white-space: nowrap; }
@@ -622,8 +613,7 @@ table {
   font-family: 'gagalinregular';
   font-size: 40px;
   color: #ffffff;
-  text-decoration: none;
-  text-align: center; }
+  text-decoration: none; }
 
 .menu-acc__text {
   font-family: "UbuntuRegular";
@@ -707,6 +697,9 @@ table {
       position: absolute;
       left: 4px;
       top: 50%;
+      -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+      transform-origin: center;
       -webkit-transform: translateY(-30%);
       -ms-transform: translateY(-30%);
       transform: translateY(-30%);
@@ -815,5 +808,9 @@ table {
     margin-right: 0; }
   .nav__link_form-clear {
     text-transform: none; }
+
+.map-section {
+  background: url("../../image/bg/bg-map.png") center center no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
