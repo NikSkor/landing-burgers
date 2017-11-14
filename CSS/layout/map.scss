@@ -1,4 +1,66 @@
 .map-section {
     background: url('../../image/bg/bg-map.png') center center no-repeat;
     background-size: cover;
+    position: relative;
+    width: 100%;
+}
+.footer {
+    background: url('../../image/bg/bg-footer.jpg') center center no-repeat;
+    background-size: cover;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.footer__contacts {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 58.75rem;
+}
+.footer__comtacts-info {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.footer__social {
+    display: flex;
+    justify-content: flex-end;
+}
+.social__list {
+    display: flex;
+}
+.social__item {
+    margin: 0.3125rem;
+}
+.social__link_icon {
+    fill: #585858;
+    height: 1.25rem;
+    width: 1.25rem;
+    transition: .8s;
+
+    &:hover {
+        fill: $white;
+    }
+}
+.footer__address {
+    color: $white;
+    font-family: "UbuntuLight";
+    font-size: 14px;
+
+}
+.footer__phone {
+    font-family: "UbuntuBold";
+    font-size: 14px;
+    color: #e45028;
+    text-decoration: none;
+}
+.phone__link_icon {
+    fill: #e35028;
+    height: 0.75rem;
+    width: 0.8125rem;
 }
