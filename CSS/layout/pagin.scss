@@ -1,11 +1,15 @@
 .pagination {
     position: fixed;
-    right: 10vh;
-    top: 10vh;
+    right: rem(50px);
+    top: rem(80px);
     z-index: 100;
     &__item {
         list-style-type: none;
         padding: rem(8px);
+    }
+
+    @include tablets {
+        display: none;
     }
   }
 .pagination__link {

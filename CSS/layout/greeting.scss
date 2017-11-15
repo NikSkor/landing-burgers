@@ -69,10 +69,26 @@
     border-radius: 50%;
     color: $white;
 }
+.greeting__first {
+    padding-top: rem(115px);
+    @include tablets {
+        text-align: center;
+        padding-top: rem(40px);
+    }
+    @include phones {
+        padding-top: rem(50px);
+    }
+}
 .greeting__second {
     font-family: 'lifehackmedium';
     font-size: rem(65px);
     color: $white;
+    
+
+    @include tablets {
+        text-align: center;
+    }
+
 }
 .greeting__pic {
     display: inline-block;
