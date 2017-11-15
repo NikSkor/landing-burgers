@@ -71,6 +71,12 @@
 
 html {
   font-size: 16px; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 15px; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 14px; } }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -86,6 +92,7 @@ li {
   list-style-type: none; }
 
 .wrapper {
+  width: 100%;
   position: relative;
   min-height: 100%;
   overflow: hidden; }
@@ -100,7 +107,8 @@ li {
   margin: 0 auto; }
 
 .container {
-  width: 100vh;
+  width: 95%;
+  max-width: 940px;
   padding: 0;
   margin: 0 auto; }
 
@@ -123,9 +131,6 @@ table {
   background-size: cover;
   padding-top: 0.75rem;
   position: relative; }
-
-.header__container {
-  width: 60rem; }
 
 .header {
   display: -webkit-box;
@@ -177,7 +182,7 @@ table {
   -o-transition: 1.3s;
   transition: 1.3s; }
   .nav__order:hover {
-    background: #c1401e; }
+    background-color: #c1401e; }
 
 .greeting__intro {
   position: absolute;
@@ -194,6 +199,13 @@ table {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .greeting__intro {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .greeting__item {
   -webkit-box-flex: 1;
@@ -228,8 +240,10 @@ table {
   color: #ffffff; }
 
 .greeting__pic {
-  display: block;
-  min-width: 100%; }
+  display: inline-block;
+  position: relative;
+  max-height: 100%;
+  width: 28.25rem; }
 
 .arrow {
   position: absolute;
@@ -243,6 +257,10 @@ table {
   width: 1.8125rem;
   height: 0.875rem;
   display: inline-block; }
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    display: none; } }
 
 .best {
   background: url("../image/bg/bg-2.png");
@@ -436,7 +454,7 @@ table {
   right: 0;
   width: 50%;
   background: rgba(47, 50, 52, 0.93);
-  padding-left: 70px;
+  padding-left: 4.375rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -452,7 +470,7 @@ table {
   justify-content: center; }
 
 .team__title {
-  margin-bottom: 90px; }
+  margin-bottom: 5.625rem; }
 
 .team-acco__trigger {
   color: #ffffff;
@@ -465,7 +483,7 @@ table {
   -ms-flex-align: center;
   align-items: center;
   font-family: 'gagalinregular';
-  font-size: 14px;
+  font-size: 0.875rem;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: .8s;
@@ -475,10 +493,10 @@ table {
     content: "";
     height: 0;
     width: 0;
-    border: 9px solid transparent;
+    border: 0.5625rem solid transparent;
     border-top-color: #f9b43b;
     border-bottom-width: 0;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
     -webkit-transition: .8s;
     -o-transition: .8s;
     transition: .8s; }
@@ -499,7 +517,7 @@ table {
   transition: .8s; }
 
 .team-acco__item {
-  margin-bottom: 20px; }
+  margin-bottom: 1.25rem; }
   .team-acco__item:hover .team-acco__trigger {
     color: #f9b43b; }
     .team-acco__item:hover .team-acco__trigger::before {
@@ -520,8 +538,8 @@ table {
   height: 100%; }
 
 .team-acco__picture {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 1.5rem; }
@@ -536,14 +554,14 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 240px;
+  width: 15rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   font-family: "UbuntuBold";
-  font-size: 14px; }
+  font-size: 0.875rem; }
   .team-acco__text-content {
     font-family: "UbuntuRegular"; }
 
@@ -585,7 +603,6 @@ table {
   position: relative; }
   .menu-acc__item:hover .menu-acc__text {
     width: 55rem;
-    z-index: 100;
     padding: 3rem; }
 
 .menu-acc__cont {
@@ -636,6 +653,10 @@ table {
   -webkit-transition: .8s;
   -o-transition: .8s;
   transition: .8s; }
+
+.menu-acc__text-active {
+  width: 55rem;
+  padding: 3rem; }
 
 .order-form {
   background: url("../../image/bg/bg-form.png") center center no-repeat;

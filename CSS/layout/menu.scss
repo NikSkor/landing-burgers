@@ -30,8 +30,9 @@
     &:hover {
         .menu-acc__text {
             width: rem(880px);
-            z-index: 100;
+            // z-index: 100;
             padding: rem(48px);
+
         }
     }
 
@@ -85,4 +86,9 @@
     overflow: hidden;
     padding: 0;
     transition: .8s;
+}
+.menu-acc__text-active {
+    width: rem(880px);
+    // z-index: 100;
+    padding: rem(48px);
 }

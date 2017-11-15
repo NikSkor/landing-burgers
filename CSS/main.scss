@@ -4,10 +4,10 @@ $grey: #999999;
 $yellow: #f9b43b;
 $orange: #e45028;
 
+$tablets: 768px;
+$phones: 480px;
 
-@function rem($px) {
-    @return $px / 16px + 0rem;
-}
+@import "../CSS/_misc/media.scss";
 
 @import "../fonts/font.scss";
 @import "../CSS/layout/wrap.scss";
@@ -19,7 +19,7 @@ $orange: #e45028;
 @import "../CSS/layout/menu.scss";
 @import "../CSS/layout/form.scss";
 @import "../CSS/layout/map.scss";
-@import "../CSS/media.scss";
+
 
 
 

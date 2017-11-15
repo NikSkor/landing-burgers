@@ -13,20 +13,20 @@
     right: 0;
     width: 50%;
     background: rgba(#2f3234, .93);
-    padding-left: 70px;
+    padding-left: rem(70px);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .team__title {
-    margin-bottom: 90px;
+    margin-bottom: rem(90px);
 }
 .team-acco__trigger {
     color: $white;
     display: flex;
     align-items: center;
     font-family: 'gagalinregular';
-    font-size: 14px;
+    font-size: rem(14px);
     text-decoration: none;
     text-transform: uppercase;
     transition: .8s;
@@ -35,10 +35,10 @@
         content: "";
         height: 0;
         width: 0;
-        border: 9px solid transparent;
+        border: rem(9px) solid transparent;
         border-top-color: $yellow;
         border-bottom-width: 0; 
-        margin-right: 5px;
+        margin-right: rem(5px);
         transition: .8s;
     }
 }
@@ -50,7 +50,7 @@
     transition: .8s;
     }
 .team-acco__item {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 
     &:hover {
     .team-acco__trigger {
@@ -76,8 +76,8 @@
     }
 }
 .team-acco__picture {
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     border-radius: 50%;
     overflow: hidden;
     margin-right: 1.5rem;
@@ -90,10 +90,10 @@
 .team-acco__text {
     color: $white;
     display: flex;
-    width: 240px;
+    width: rem(240px);
     flex-direction: column;
     font-family: "UbuntuBold";
-    font-size: 14px;
+    font-size: rem(14px);
     &-content {
         font-family: "UbuntuRegular";
 }

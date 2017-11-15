@@ -4,9 +4,6 @@
     padding-top: rem(12px);
     position: relative;
 }
-.header__container {
-    width: rem(960px);
-}
 .header {
     display: flex;
     justify-content: space-between;
@@ -42,7 +39,7 @@
     border-radius: rem(4px);
     transition: 1.3s;
     &:hover {
-        background: #c1401e;
+        background-color: #c1401e;
       }
 }
 .greeting__intro {
@@ -52,6 +49,10 @@
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .greeting__item {
     flex: 1;
@@ -74,8 +75,10 @@
     color: $white;
 }
 .greeting__pic {
-    display: block;
-    min-width: 100%;
+    display: inline-block;
+    position: relative;
+    max-height: 100%;
+    width: rem(452px);
 }
 .arrow {
     position: absolute;
@@ -87,4 +90,9 @@
     width: rem(29px);
     height: rem(14px);
     display: inline-block;
+}
+.nav__menu {
+    @include tablets {
+        display: none;
+    }
 }
