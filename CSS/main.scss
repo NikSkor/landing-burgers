@@ -5,7 +5,9 @@ $yellow: #f9b43b;
 $orange: #e45028;
 
 
-
+@function rem($px) {
+    @return $px / 16px + 0rem;
+}
 
 @import "../fonts/font.scss";
 @import "../CSS/layout/wrap.scss";
@@ -17,6 +19,8 @@ $orange: #e45028;
 @import "../CSS/layout/menu.scss";
 @import "../CSS/layout/form.scss";
 @import "../CSS/layout/map.scss";
+@import "../CSS/media.scss";
+
 
 
 

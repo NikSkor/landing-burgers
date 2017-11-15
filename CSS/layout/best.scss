@@ -7,7 +7,7 @@
 .about__best {
     text-align: center;
     color: $black;
-    padding-bottom: 60px;
+    padding-bottom: rem(60px);
 }
 .about-list {
     list-style-type: none;
@@ -21,26 +21,26 @@
     flex-direction: column;
     align-items: center;
     flex:1;
-    margin-right: 20px;
+    margin-right: rem(20px);
     &:last-child {
         margin-right: 0;
     }
 }
 .about__head {
-    margin-bottom: 35px;
-    width: 100px;
-    height: 75px;
+    margin-bottom: rem(35px);
+    width: rem(100px);
+    height: rem(75px);
 }
 .about__title {
     font-family: 'lifehackmedium';
-    font-size: 24.1px;
+    font-size: rem(24px);
     color: $black;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     text-align: center;
 }
 .about__text {
     font-family: "UbuntuLight";
-    font-size: 14.03px;
+    font-size: rem(14px);
     color: $black;
-    line-height: 24.01px;
+    line-height: rem(24px);
 }

@@ -1,3 +1,6 @@
+html {
+    font-size: 16px;
+}
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
@@ -18,7 +21,7 @@ li {
 }
 .section {
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     display: block;
     background-color: $grey;
 
@@ -27,11 +30,9 @@ li {
     margin: 0 auto;
 }
 .container {
-    // width: 970px;
     width: 100vh;
     padding: 0;
     margin: 0 auto;
-    // height: 100%;
 }
 table {
     border-collapse: collapse;
@@ -43,6 +44,6 @@ table {
 .main-title {
     text-transform: uppercase;
     font-family: 'gagalinregular';
-    font-size: 72px;
+    font-size: rem(72px);
     color: $yellow;
 }

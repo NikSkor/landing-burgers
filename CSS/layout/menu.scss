@@ -24,21 +24,21 @@
 }
 .menu-acc__item {
     display: flex;
-    max-width: 60rem;
+    max-width: rem(960px);
     position: relative;
 
     &:hover {
         .menu-acc__text {
-            width: 55rem;
+            width: rem(880px);
             z-index: 100;
-            padding: 3rem;
+            padding: rem(48px);
         }
     }
 
     
 }
 .menu-acc__cont {
-    width: 5rem;
+    width: rem(80px);
     display: flex;
     
     &-meat {
@@ -56,7 +56,7 @@
 }   
 .menu-acc__link {
     display: block;
-    width: 5rem;
+    width: rem(80px);
     height: 100vh;
     white-space: nowrap;
 }
@@ -69,14 +69,14 @@
 .menu-acc__link {
     text-transform: uppercase;
     font-family: 'gagalinregular';
-    font-size: 40px;
+    font-size: rem(40px);
     color: $white;
     text-decoration: none;
     
 }
 .menu-acc__text {
     font-family: "UbuntuRegular";
-    font-size: 14px;
+    font-size: rem(14px);
     line-height: 2.5;
     color: $white;
     height: 100vh;
