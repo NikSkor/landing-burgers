@@ -17,9 +17,37 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include tablets {
+        width: 100%;
+        padding: 0;
+        left: 0;
+
+    }
 }
 .team__title {
     margin-bottom: rem(90px);
+
+    @include tablets {
+    margin-bottom: rem(130px);
+    text-align: center;
+    }
+    @include phones {
+        font-size: rem(50px);
+        margin-bottom: rem (100px); 
+    
+    }
+}
+.team-acco {
+
+    @include tablets {
+    padding: 0;
+    width: 45%;
+    margin: auto;
+    }
+    @include phones {
+        width: 70%;
+    }
 }
 .team-acco__trigger {
     color: $white;
@@ -30,6 +58,7 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: .8s;
+    white-space: nowrap;
 
     &:before {
         content: "";
@@ -41,6 +70,11 @@
         margin-right: rem(5px);
         transition: .8s;
     }
+
+    @include tablets {
+        font-size: rem(25px);
+        margin: auto;
+    }
 }
 .team-acco__content {
     display: flex;
@@ -51,6 +85,13 @@
     }
 .team-acco__item {
     margin-bottom: rem(20px);
+    
+
+    @include tablets {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
 
     &:hover {
     .team-acco__trigger {
@@ -61,6 +102,11 @@
     }
     .team-acco__content {
         height: 100%;
+
+        @include tablets {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }    
 }
@@ -70,9 +116,18 @@
         &::before {
             transform: rotate(-180deg);
         }
+        @include tablets {
+            font-size: rem(25px);
+            margin: auto;
+        }
     }
     .team-acco__content {
         height: 100%;
+        @include tablets {
+            display: flex;
+            flex-wrap: wrap;
+    
+        }
     }
 }
 .team-acco__picture {
@@ -81,21 +136,33 @@
     border-radius: 50%;
     overflow: hidden;
     margin-right: 1.5rem;
+
+    @include tablets {
+        margin: rem(10px) auto;
+    }
     
 }
 .team-acco__pic {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 .team-acco__text {
     color: $white;
     display: flex;
-    width: rem(240px);
     flex-direction: column;
     font-family: "UbuntuBold";
     font-size: rem(14px);
+    // &-title {
+    //     @include tablets {
+    //         text-align: center;
+    //     }
+    // }
     &-content {
         font-family: "UbuntuRegular";
-}
+        @include tablets {
+            text-align: center;
+        }
+    }
+
 }
  

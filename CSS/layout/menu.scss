@@ -21,19 +21,38 @@
     top: 50%;
     display: inline-block;
     transform: translateY(-50%) translateX(-35%) rotate(-90deg);
+
+    @include tablets {
+        top: 80%;
+    }
 }
 .menu-acc__item {
     display: flex;
-    max-width: rem(960px);
+    max-width: rem(940px);
     position: relative;
+
+    @include tablets {
+        max-width: rem(740px);
+    }
+    @include phones {
+        max-width:  rem(450px);
+    }
 
     &:hover {
         .menu-acc__text {
-            width: rem(880px);
+            width: rem(700px);
             // z-index: 100;
             padding: rem(48px);
 
+            @include tablets {
+                width: rem(500px);
+            }
+            @include phones {
+                max-width:  rem(320px);
+            }
+        
         }
+        
     }
 
     
@@ -54,6 +73,10 @@
         background: url('../../image/content/diet.png') center center no-repeat;
         background-size: cover;
     }
+
+    @include phones {
+        
+    }
 }   
 .menu-acc__link {
     display: block;
@@ -66,6 +89,16 @@
     top: 10%;
     left: 10%;
     color: $white;
+
+    @include tablets {
+        left: rem(20px);
+        top: rem(120px);
+    }
+    @include phones {
+        left: rem(60px);
+        top: rem(58px);
+        font-size: rem(50px);
+    }
 }
 .menu-acc__link {
     text-transform: uppercase;

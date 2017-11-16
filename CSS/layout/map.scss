@@ -14,6 +14,10 @@
     display: flex;
     align-items: center;
     width: 100%;
+
+    @include phones {
+        height: rem(115px);
+    }
 }
 .footer__contacts {
     display: flex;
@@ -21,18 +25,45 @@
     flex-wrap: wrap;
     align-items: center;
     width: rem(940px);
+
+    @include tablets {
+        padding: 0 rem(24px);
+    }
+    @include phones {
+        flex-direction: column;
+    }
 }
-.footer__comtacts-info {
+.footer__contacts-info {
     display: flex;
     flex-direction: column;
     flex: 2;
+
+    @include phones {
+        text-align: center;
+        padding-top: rem(20px);
+    }
+}
+.footer__addres {
+    @include phones {
+        margin-top: rem(10px);
+    }
 }
 .footer__social {
     display: flex;
-    justify-content: flex-end;
+    text-align: right;
+
+    @include phones {
+        text-align: center;
+    }
 }
 .social__list {
     display: flex;
+
+    @include phones {
+    padding: 0;
+    margin: 0;
+    margin-top: rem(20px);
+    }
 }
 .social__item {
     margin: rem(5px);

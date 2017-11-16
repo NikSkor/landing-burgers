@@ -12,12 +12,16 @@
 }
 .feeds__block {
     background: no-repeat center/cover;
-    height: 50vh;
+    // height: 50%;
     width: 25vh;
         flex: 1 0 25%;
     position: relative;
     &:hover .feeds__about {
         opacity: 1;
+    }
+
+    @include tablets {
+        flex: 1 0 50%;
     }
 }
 .feeds__about {
@@ -40,6 +44,7 @@
     font-family: "UbuntuLight";
     font-size: rem(14px);
     color: $white;
+    overflow: hidden;
 }
 .feeds__button {
     font-family: "UbuntuMedium";

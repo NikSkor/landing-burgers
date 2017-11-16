@@ -13,8 +13,24 @@
     align-items: center;
 }
 .form {
-    margin-top: rem(75px);
+    // margin-top: rem(75px);
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+.form-title {
+    @include tablets {
+        margin-bottom: rem(75px);
+        text-align: center;
+
+    }
+    @include phones {
+        font-size: rem(50px);
+        margin-bottom: rem(35px);
+        text-align: center;
+    }
 }
 .form__elem {
     width: 50%;
@@ -22,6 +38,15 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @include tablets {
+        width: 100%;
+        padding: 0 20%;
+        margin-right: 0;
+    }
+    @include phones {
+        padding: 0 5%;
     }
 }
 .form__block-title {
@@ -137,6 +162,25 @@
         margin-bottom: 0;
     }
     
+    @include tablets {
+        margin-bottom: rem(10px);
+    }
+    @include phones {
+        margin-bottom: rem(20px);
+    }
+
+    &_radio {
+        @include phones {
+            justify-content: center;
+        }
+    }
+}
+.form__row_checkbox {
+    display: flex;
+
+    @include phones {
+    text-align: center;
+    }
 }
 .form__block {
     flex: 1;
@@ -154,6 +198,10 @@
 .form__row_buttons {
     justify-content: flex-start;
     flex: none;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 .nav__link_form {
     margin: 0;
