@@ -215,3 +215,12 @@
         text-transform: none;
     }
 }
+.form__block_floor {
+    @include phones {
+        display: none;
+    }
+}
+.form__block:nth-child(3) {
+    @include phones {
+    margin-right: 0;}
+}

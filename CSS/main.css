@@ -747,7 +747,7 @@ table {
         width: 31.25rem; } }
     @media screen and (max-width: 480px) {
       .menu-acc__item:hover .menu-acc__text {
-        max-width: 20rem; } }
+        width: 20rem; } }
 
 .menu-acc__cont {
   width: 5rem;
@@ -1042,6 +1042,14 @@ table {
     margin-right: 0; }
   .nav__link_form-clear {
     text-transform: none; }
+
+@media screen and (max-width: 480px) {
+  .form__block_floor {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  .form__block:nth-child(3) {
+    margin-right: 0; } }
 
 .map-section {
   background: url("../../image/bg/bg-map.png") center center no-repeat;
