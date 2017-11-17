@@ -812,11 +812,11 @@ table {
   padding: 3rem; }
 
 .order-form {
-  background: url("../../image/bg/bg-form.png") center center no-repeat;
+  background: url("../image/bg/bg-form.png") center center no-repeat;
   background-size: cover; }
 
 .form-container {
-  background: url("../../image/bg/bg-texture.png") center center no-repeat;
+  background: url("../image/bg/bg-texture.png") center center no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -1052,13 +1052,13 @@ table {
     margin-right: 0; } }
 
 .map-section {
-  background: url("../../image/bg/bg-map.png") center center no-repeat;
+  background: url("../image/bg/bg-map.png") center center no-repeat;
   background-size: cover;
   position: relative;
   width: 100%; }
 
 .footer {
-  background: url("../../image/bg/bg-footer.jpg") center center no-repeat;
+  background: url("../image/bg/bg-footer.jpg") center center no-repeat;
   background-size: cover;
   height: 5.625rem;
   position: absolute;

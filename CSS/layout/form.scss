@@ -1,9 +1,9 @@
 .order-form {
-    background: url('../../image/bg/bg-form.png') center center no-repeat;
+    background: url('../image/bg/bg-form.png') center center no-repeat;
     background-size: cover;
 }
 .form-container {
-    background: url('../../image/bg/bg-texture.png') center center no-repeat;
+    background: url('../image/bg/bg-texture.png') center center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -13,7 +13,6 @@
     align-items: center;
 }
 .form {
-    // margin-top: rem(75px);
     display: flex;
 
     @include tablets {
