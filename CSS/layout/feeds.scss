@@ -1,9 +1,6 @@
-.feeds {
-    background-color: grey;
-}
 .feeds__container {
     width: 100%;
-    height: 960px;
+    height: 100%;
 }
 .feeds__personal {
     margin: 0;
@@ -15,18 +12,22 @@
 }
 .feeds__block {
     background: no-repeat center/cover;
-    
-    flex: 1 0 25%;
+    // height: 50%;
+    width: 25vh;
+        flex: 1 0 25%;
     position: relative;
     &:hover .feeds__about {
         opacity: 1;
     }
+
+    @include tablets {
+        flex: 1 0 50%;
+    }
 }
 .feeds__about {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: rem(20px);
+    padding-right: rem(20px);
     background-color: rgba(20,20,20, .7);
-    box-sizing: border-box;
     height: 100%;
     overflow: hidden;
     opacity: 0;
@@ -34,27 +35,28 @@
 }
 .feeds__name {
     font-family: 'gagalinregular';
-    font-size: 14px;
-    color: #ffffff;
+    font-size: rem(14px);
+    color: $white;
     text-transform: uppercase;
-    padding-top: 35px;
+    padding-top: rem(35px);
 }
 .feeds__text{
     font-family: "UbuntuLight";
-    font-size: 14px;
-    color: #ffffff;
+    font-size: rem(14px);
+    color: $white;
+    overflow: hidden;
 }
 .feeds__button {
     font-family: "UbuntuMedium";
-    font-size: 13px;
-    color: #ffffff;
+    font-size: rem(13px);
+    color: $white;
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: rem(5px);
     background-color: #2f3234;
-    padding: 13px 28px;
-    border-radius: 5px;
+    padding: rem(13px) rem(28px);
+    border-radius: rem(5px);
     transition: background-color 0.3s;
     &:hover {
         background-color: #1f2122;

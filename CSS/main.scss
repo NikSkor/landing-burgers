@@ -1,9 +1,31 @@
+$black: #000000;
+$white: #ffffff;
+$grey: #999999;
+$yellow: #f9b43b;
+$orange: #e45028;
+
+$tablets: 768px;
+$phones: 480px;
+
+@import "../CSS/_misc/media.scss";
+
 @import "../fonts/font.scss";
 @import "../CSS/layout/wrap.scss";
 @import "../CSS/layout/greeting.scss";
 @import "../CSS/layout/best.scss";
 @import "../CSS/layout/feeds.scss";
 @import "../CSS/layout/pagin.scss";
+@import "../CSS/layout/team.scss";
+@import "../CSS/layout/menu.scss";
+@import "../CSS/layout/form.scss";
+@import "../CSS/layout/map.scss";
+
+
+
+
+
+
+
 
 
 

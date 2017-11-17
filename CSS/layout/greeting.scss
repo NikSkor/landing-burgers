@@ -1,20 +1,17 @@
 .greeting {
-    background-color: grey;
-    background: url("../image/bg/bg-1.png");
+    background: url("../image/bg/bg-1.png") center center no-repeat;
     background-size: cover;
-    padding-top: 12px;
-    box-sizing: border-box;
+    padding-top: rem(12px);
     position: relative;
 }
-.header__container {
-    width: 960px;
+.header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+
 }
 .header__logo {
-    width: 90px;
-    height: 70px;
+    width: rem(90px);
+    height: rem(70px);
 }
 .logo__link {
     display: block;
@@ -25,24 +22,24 @@
 }
 .nav-list {
     display: flex;
-    list-style-type: none;
+
 }
 .nav__link {
     text-transform: uppercase;
     font-family: "UbuntuMedium", sans-serif;
-    font-size: 13px;
-    color: #ffffff;
+    font-size: rem(13px);
+    color: $white;
     text-decoration: none;
-    margin: 10px;
+    margin: rem(10px);
 }
 .nav__order {
     display: block;
-    background-color: #e45028;
-    padding: 15px;
-    border-radius: 4px;
+    background-color: $orange;
+    padding: rem(15px);
+    border-radius: rem(4px);
     transition: 1.3s;
     &:hover {
-        background: #c1401e;
+        background-color: #c1401e;
       }
 }
 .greeting__intro {
@@ -52,6 +49,10 @@
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .greeting__item {
     flex: 1;
@@ -63,34 +64,51 @@
 .nav__item:not(:last-child):after {
     display: inline-block;
     content: "•";
-    width: 3px;
-    height: 3px;
+    width: rem(3px);
+    height: rem(3px);
     border-radius: 50%;
-    color: #ffffff;
-
+    color: $white;
 }
 .greeting__first {
-    text-transform: uppercase;
-    font-family: 'gagalinregular';
-    font-size: 72px;
-    color: #f9b43b;
+    padding-top: rem(115px);
+    @include tablets {
+        text-align: center;
+        padding-top: rem(40px);
+    }
+    @include phones {
+        padding-top: rem(50px);
+    }
 }
 .greeting__second {
     font-family: 'lifehackmedium';
-    font-size: 65px;
-    color: #fff;
+    font-size: rem(65px);
+    color: $white;
+    
+
+    @include tablets {
+        text-align: center;
+    }
+
 }
 .greeting__pic {
-    min-width: 100%;
+    display: inline-block;
+    position: relative;
+    max-height: 100%;
+    width: rem(452px);
 }
 .arrow {
     position: absolute;
-    bottom: 42px;
+    bottom: rem(42px);
     left: 50%;
     transform: translateX(-50%);
 }
 .arrow__pic {
-    width: 29px;
-    height: 14px;
+    width: rem(29px);
+    height: rem(14px);
     display: inline-block;
+}
+.nav__menu {
+    @include tablets {
+        display: none;
+    }
 }

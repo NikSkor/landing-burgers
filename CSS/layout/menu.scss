@@ -1,0 +1,123 @@
+.menu {
+    background: url("../image/bg/bg-menu.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.menu__container {
+    width: 100vh;
+}
+.menu-acc {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+}
+.menu-acc__title {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    display: inline-block;
+    transform: translateY(-50%) translateX(-35%) rotate(-90deg);
+
+    @include tablets {
+        top: 80%;
+    }
+}
+.menu-acc__item {
+    display: flex;
+    max-width: rem(940px);
+    position: relative;
+
+    @include tablets {
+        max-width: rem(740px);
+    }
+    @include phones {
+        max-width:  rem(450px);
+    }
+
+    &:hover {
+        .menu-acc__text {
+            width: rem(700px);
+            // z-index: 100;
+            padding: rem(48px);
+
+            @include tablets {
+                width: rem(500px);
+            }
+            @include phones {
+                width:  rem(320px);
+            }
+        
+        }
+        
+    }
+
+    
+}
+.menu-acc__cont {
+    width: rem(80px);
+    display: flex;
+    
+    &-meat {
+        background: url('../../image/content/meatlove.png') center center no-repeat;
+        background-size: cover;
+    }
+    &-vegan {
+        background: url('../../image/content/vegan.png') center center no-repeat;
+        background-size: cover;
+    }
+    &-diet {
+        background: url('../../image/content/diet.png') center center no-repeat;
+        background-size: cover;
+    }
+}   
+.menu-acc__link {
+    display: block;
+    width: rem(80px);
+    height: 100vh;
+    white-space: nowrap;
+}
+.menu__title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: $white;
+
+    @include tablets {
+        left: rem(20px);
+        top: rem(120px);
+    }
+    @include phones {
+        left: rem(60px);
+        top: rem(58px);
+        font-size: rem(50px);
+    }
+}
+.menu-acc__link {
+    text-transform: uppercase;
+    font-family: 'gagalinregular';
+    font-size: rem(40px);
+    color: $white;
+    text-decoration: none;
+    
+}
+.menu-acc__text {
+    font-family: "UbuntuRegular";
+    font-size: rem(14px);
+    line-height: 2.5;
+    color: $white;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: .8s;
+}
+.menu-acc__text-active {
+    width: rem(880px);
+    // z-index: 100;
+    padding: rem(48px);
+}

@@ -1,48 +1,89 @@
 .best {
-    background-color: grey;
-    background: url("../image/bg/bg-2.png");
+    background: url("../image/bg/bg-2.png") center center no-repeat;
     background-size: cover;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
 }
 .about__best {
     text-align: center;
-    text-transform: uppercase;
-    font-family: 'gagalinregular';
-    font-size: 72px;
-    color: #000000;
-    padding-bottom: 60px;
+    color: $black;
+    padding-bottom: rem(60px);
+
+    @include tablets {
+        padding-bottom: rem(160px);}
+    @include phones { 
+        padding-bottom: rem(80px);
+        font-size: rem(50px);
+    }
+}
+.about__container {
+    @include phones {
+        margin-left: rem(25px);
+    }
 }
 .about-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+
+    @include phones {
+    flex-direction: column;
+    }
+
 }
 .about__item {
     text-align: center;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex:1;
+   margin-right: rem(20px); 
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include phones {
+        flex-direction: row;
+        // flex: 1;
+        align-items: flex-start;
+        margin-bottom: rem(45px);
+        &:last-child {
+            margin-bottom: rem(5px);
+        }
+    }
 }
 .about__head {
-    margin-bottom: 35px;
-    width: 100px;
-    height: 75px;
+    margin-bottom: rem(35px);
+    min-width: rem(100px);
+    height: rem(75px);
+
+    @include phones {
+    margin-right: rem(25px);
+}
+}
+.about__pic {
+
 }
 .about__title {
     font-family: 'lifehackmedium';
-    font-size: 24.1px;
-    color: #000000;
-    margin-bottom: 20px;
+    font-size: rem(24px);
+    color: $black;
+    margin-bottom: rem(20px);
     text-align: center;
+
+    @include phones {
+    text-align: left;
+    margin-bottom: rem(15px);
+}
 }
 .about__text {
     font-family: "UbuntuLight";
-    font-size: 14.03px;
-    color: #000000;
-    line-height: 24.01px;
+    font-size: rem(14px);
+    color: $black;
+    line-height: rem(24px);
+
+    @include phones {
+    text-align: left;}
 }
