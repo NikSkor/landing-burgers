@@ -538,6 +538,12 @@ table {
       padding: 0;
       left: 0; } }
 
+.team__content {
+  width: 90%; }
+  @media screen and (max-width: 768px) {
+    .team__content {
+      width: 100%; } }
+
 .team__title {
   margin-bottom: 5.625rem; }
   @media screen and (max-width: 768px) {
@@ -666,10 +672,18 @@ table {
   height: 6.25rem;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 1.5rem; }
+  margin-right: 1.5rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 6.25rem;
+  -ms-flex: 1 0 6.25rem;
+  flex: 1 0 6.25rem; }
   @media screen and (max-width: 768px) {
     .team-acco__picture {
-      margin: 0.625rem auto; } }
+      margin: 0.625rem auto;
+      -webkit-box-flex: inherit;
+      -webkit-flex: inherit;
+      -ms-flex: inherit;
+      flex: inherit; } }
 
 .team-acco__pic {
   max-width: 100%;
@@ -712,7 +726,7 @@ table {
   top: 0;
   bottom: 0;
   right: 0;
-  height: 100vh; }
+  height: 100%; }
 
 .menu-acc__title {
   position: absolute;
@@ -756,13 +770,13 @@ table {
   display: -ms-flexbox;
   display: flex; }
   .menu-acc__cont-meat {
-    background: url("../../image/content/meatlove.png") center center no-repeat;
+    background: url("../image/content/meatlove.png") center center no-repeat;
     background-size: cover; }
   .menu-acc__cont-vegan {
-    background: url("../../image/content/vegan.png") center center no-repeat;
+    background: url("../image/content/vegan.png") center center no-repeat;
     background-size: cover; }
   .menu-acc__cont-diet {
-    background: url("../../image/content/diet.png") center center no-repeat;
+    background: url("../image/content/diet.png") center center no-repeat;
     background-size: cover; }
 
 .menu-acc__link {
@@ -798,7 +812,7 @@ table {
   font-size: 0.875rem;
   line-height: 2.5;
   color: #ffffff;
-  height: 100vh;
+  height: 100%;
   background: rgba(0, 0, 0, 0.6);
   width: 0;
   overflow: hidden;
