@@ -1,0 +1,225 @@
+.order-form {
+    background: url('../image/bg/bg-form.png') center center no-repeat;
+    background-size: cover;
+}
+.form-container {
+    background: url('../image/bg/bg-texture.png') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+.form-title {
+    @include tablets {
+        margin-bottom: rem(75px);
+        text-align: center;
+
+    }
+    @include phones {
+        font-size: rem(50px);
+        margin-bottom: rem(35px);
+        text-align: center;
+    }
+}
+.form__elem {
+    width: 50%;
+    margin-right: rem(20px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        width: 100%;
+        padding: 0 20%;
+        margin-right: 0;
+    }
+    @include phones {
+        padding: 0 5%;
+    }
+}
+.form__block-title {
+    color: $white;
+    font-family: "UbuntuLight";
+    font-size: rem(14px);
+    margin-bottom: rem(10px);
+
+    &-radio {
+        position: relative;
+        &::before {
+            content: "";
+            width: rem(15px);
+            height: rem(15px);
+            border-radius: 50%;
+            border: none;
+            background: $white;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: rem(8px);
+        }
+        &::after {
+            content: "";
+            width: rem(7px);
+            height: rem(7px);
+            border-radius: 50%;
+            background: $orange;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            left: rem(4px);
+            top: 50%;
+            transform-origin: center;
+            transform: translateY(-30%);
+            opacity: 0;
+        }
+    }
+    &-checkbox {
+        position: relative;
+        &::before {
+            content: "";
+            width: rem(15px);
+            height: rem(15px);
+            border: none;
+            background: $white;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: rem(8px);
+        }
+        &::after {
+            content: "✔";
+            color: $orange;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            left: rem(2px);
+            top: 50%;
+            transform: translateY(-40%);
+            opacity: 0;
+        }
+    }
+}
+.input-radio {
+    position: absolute;
+    opacity: 0;
+
+    &:checked {
+        & +.form__block-title {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+.input-checkbox {
+    position: absolute;
+    opacity: 0;
+
+    &:checked {
+        & +.form__block-title {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+.form__input {
+    border: rem(1px) solid transparent;
+    outline: none;
+    border-radius: rem(4px);
+    padding: rem(10px);
+    font-family: "UbuntuRegular";
+    font-size: rem(14px);
+    color: $black;
+    width: 100%;
+    margin-bottom: rem(20px);
+
+    &:focus {
+        border: rem(1px) solid #0099FF;
+    }
+}
+.form__textarea {
+    resize: none;
+    height: 8.85714rem;
+    width: 100%;
+    padding: rem(5px);
+}
+.form__row {
+    display: flex;
+    margin-bottom: rem(20px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    @include tablets {
+        margin-bottom: rem(10px);
+    }
+    @include phones {
+        margin-bottom: rem(20px);
+    }
+
+    &_radio {
+        @include phones {
+            justify-content: center;
+        }
+    }
+}
+.form__row_checkbox {
+    display: flex;
+
+    @include phones {
+    text-align: center;
+    }
+}
+.form__block {
+    flex: 1;
+    margin-right: rem(20px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+    &_radio {
+        display: flex;
+        justify-content: flex-start;
+        flex: none;
+    }
+}
+.form__row_buttons {
+    justify-content: flex-start;
+    flex: none;
+
+    @include phones {
+        justify-content: center;
+    }
+}
+.nav__link_form {
+    margin: 0;
+    padding: rem(15px) rem(12px);
+    margin-right: rem(20px);
+    
+        &:last-child {
+            margin-right: 0;
+}
+    &-clear {
+        text-transform: none;
+    }
+}
+.form__block_floor {
+    @include phones {
+        display: none;
+    }
+}
+.form__block:nth-child(3) {
+    @include phones {
+    margin-right: 0;}
+}
