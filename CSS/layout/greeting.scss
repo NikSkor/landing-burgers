@@ -123,7 +123,17 @@
     @include tablets {
         display: flex;
         flex-direction: column;
+        cursor: pointer;
     }
+}
+.hamburger-menu__picture {
+    display: none;
+    &-active {
+        display: block;
+    }
+}
+.hamburger-menu__pic {
+    width: 100%;
 }
 .hamburger-menu__line {
     height: 0.25rem;
@@ -133,7 +143,16 @@
     background: #fff;
     display: inline-block;
     border-radius: 0.125rem;
+
 }
+.hamburger-menu-lineblock {
+    display: flex;
+    flex-direction: column;
+    &-active {
+        display: none;
+    }
+}
+
 .greeting__menu {
     display: none;
     width: 100%;
@@ -143,13 +162,12 @@
     background-color: #2f3234;
     position: absolute;
     z-index: 200;
-    opacity: 0;
-    transition: .6s;
+    opacity: .98;
 
 }
 .greeting__menu-active {
     display: block;
-    opacity: .98;
+    
 }
 
 .greeting__menu-list {
@@ -157,13 +175,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top:  30%;
-
-    @include phones {
-        margin-top: 50%;
-    }
-    
-
+    margin-top:  50%;
 }
 .greeting__menu__item {
     // margin-bottom: rem(60px);
@@ -188,5 +200,20 @@
     text-transform: uppercase;
     color: $white;
     text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
 
 }
+// .hamburger-menu__line-1 {
+//     position: relative;  
+//     transform: rotate(45deg) translateY(-10px);
+//     // top: 12px;
+// } 
+// .hamburger-menu__line-2 {
+//     position: relative;
+//     transform: rotate(-45deg) translateY(10px);
+//     // bottom: 12px;
+// }
+// .hamburger-menu__line-3 {
+//     display: none;
+// }
