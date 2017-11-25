@@ -12,6 +12,16 @@
     <div class="wrapper">
         <div class="maincontent">
             <section class="section greeting">
+                    <div class="greeting__menu" id="hamburger-menu" >
+                            <ul class="greeting__menu-list">
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">почему мы</a></li>
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">меню</a></li>
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">советы</a></li>
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">кто мы</a></li>
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">свяжитесь с нами</a></li>
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">контакты</a></li>
+                            </ul>
+                      </div>
                 <div class="container header__container">
                     <header class="header">
                         <div class="header__logo logo">  
@@ -32,10 +42,15 @@
                             </div>
                             <div class="nav__button">
                                 <a href="#" class="nav__link nav__order">заказать</a>
-                                <a class="nav__hamburger-menu hamburger-menu" href="">
-                                        <div class="hamburger-menu__bars"></div>
-                                </a>
+                                
                             </div>
+
+                            <div class="hamburger-menu__bars" id="hamburger-button">
+                                <span class="hamburger-menu__line"></span>
+                                <span class="hamburger-menu__line"></span>
+                                <span class="hamburger-menu__line"></span>
+                            </div>
+
                         </nav>
                     </header>
                 </div>
@@ -408,5 +423,6 @@
             </div>
         </div>
 </div>
+<script src="./JS/main.js"></script>
 </body>
 </html>
