@@ -3,6 +3,7 @@ $white: #ffffff;
 $grey: #999999;
 $yellow: #f9b43b;
 $orange: #e45028;
+$light-orange: #f08c33;
 
 $tablets: 768px;
 $phones: 480px;
@@ -19,6 +20,8 @@ $phones: 480px;
 @import "../CSS/layout/menu.scss";
 @import "../CSS/layout/form.scss";
 @import "../CSS/layout/map.scss";
+@import "../CSS/layout/slider.scss";
+
 
 
 

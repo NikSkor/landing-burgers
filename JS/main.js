@@ -20,3 +20,4 @@ hamburgerButton.addEventListener ('click', function() {
         exitButton.classList.remove('hamburger-menu-lineblock-active')
     }
 })
+
