@@ -13,7 +13,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    height: 100vh;
+    height: 100%;
 }
 .menu-acc__title {
     position: absolute;
@@ -62,15 +62,15 @@
     display: flex;
     
     &-meat {
-        background: url('../../image/content/meatlove.png') center center no-repeat;
+        background: url('../image/content/meatlove.png') center center no-repeat;
         background-size: cover;
     }
     &-vegan {
-        background: url('../../image/content/vegan.png') center center no-repeat;
+        background: url('../image/content/vegan.png') center center no-repeat;
         background-size: cover;
     }
     &-diet {
-        background: url('../../image/content/diet.png') center center no-repeat;
+        background: url('../image/content/diet.png') center center no-repeat;
         background-size: cover;
     }
 }   
@@ -109,7 +109,7 @@
     font-size: rem(14px);
     line-height: 2.5;
     color: $white;
-    height: 100vh;
+    height: 100%;
     background: rgba(0, 0, 0, 0.6);
     width: 0;
     overflow: hidden;

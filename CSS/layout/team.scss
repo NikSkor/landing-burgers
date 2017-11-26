@@ -25,6 +25,13 @@
 
     }
 }
+.team__content {
+    width: 90%;
+
+    @include tablets {
+        width: 100%;
+    }
+}
 .team__title {
     margin-bottom: rem(90px);
 
@@ -136,9 +143,14 @@
     border-radius: 50%;
     overflow: hidden;
     margin-right: 1.5rem;
+    flex: 1 0 rem(100px);
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    // flex-basis: rem(100px);
 
     @include tablets {
         margin: rem(10px) auto;
+        flex: inherit;
     }
     
 }
@@ -152,6 +164,8 @@
     flex-direction: column;
     font-family: "UbuntuBold";
     font-size: rem(14px);
+    // flex-grow: 4;
+    // flex-shrink: 4;
     // &-title {
     //     @include tablets {
     //         text-align: center;

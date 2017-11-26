@@ -1,0 +1,257 @@
+.slider {
+    background: linear-gradient(to bottom, #f9b43b 20%, #eb8c38 50%, #f9b43b 80%);
+    position: relative;
+    display: flex;
+} 
+.arrow__scroll {
+    fill: $white;
+    height: rem(30px);
+    width: rem(30px);
+    position: absolute;
+    top: 50%;
+
+    &_left {
+        transform: rotate(90deg);
+        left: 5%;
+    }
+    &_right {
+        transform: rotate(-90deg);
+
+        left: 95%;
+    }
+}
+.slider-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 rem(30px);
+
+    @include tablets {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    @include phones {
+        margin-top: rem(30px);
+    }
+}
+.slider__photo {
+    margin-right: rem(20px);
+    position: relative;
+    margin-top: rem(85px);
+
+    @include tablets {
+        margin: 0;
+    }
+}
+.slider__pic {
+    width: 100%;
+}
+.slider__about {
+    position: relative;
+    width: 50%;
+
+    @include tablets {
+        width: 90%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
+}
+.slider__title {
+    color: $white;
+    margin-bottom: rem(50px);
+    line-height: 0.9;
+
+    @include tablets {
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: rem(25px);
+    }
+
+    @include phones {
+        font-size: rem(50px);
+    }
+}
+.slider__title_big {
+    white-space: nowrap;
+    margin-bottom: rem(15px);
+}
+.slider__text {
+    font-family: "UbuntuLight";
+    font-size: rem(14px);
+    color: $white;
+
+    @include tablets {
+    text-align: center;
+    }
+}
+.slider__order {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-left: auto;
+    
+}
+.slider__order-title {
+    color: $orange;
+    padding: 0;
+    margin-right: rem(10px);
+
+    &_small {
+    font-size: rem(28px);
+    margin-right: rem(25px);
+    }
+
+}
+.slider__composition {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -10%;
+    width: rem(87px);
+    height: rem(90px);
+    background-color: $light-orange;
+    border-radius: rem(5px);
+    padding: rem(12px) rem(20px);
+    cursor: pointer;
+    transition: 0.8s;
+    margin-right: rem(20px);
+
+    @include tablets {
+        left: 10%;
+
+    }
+    @include phones {
+        top: -10%;
+        left: 10%
+    }
+
+    &:hover {
+        background-color: $orange; 
+        &~.hidden-menu {
+            display: block;
+        }
+    
+    }
+
+}
+.slider__comp-pic {
+
+    width: rem(46px);
+    height: rem(44px);
+    fill: $white;
+}
+.composition-title {
+    font-size: rem(14px);
+    color: $white;
+
+}
+.kkal {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 110%;
+
+    @include tablets {
+        top: -10%;
+        left: 90%;
+    }
+    @include phones {
+        top: -10%;
+    }
+    &__pic {
+        width: rem(60px);
+        height: rem(60px);
+        fill: $white;
+        position: relative;
+    }
+}
+.kkal__text {
+position: absolute;
+transform: translate(-50%, -50%);
+top: 45%;
+left: 50%;
+}
+.kkal__title {
+    margin-left: 25%;
+
+}
+.hidden-menu {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    // left: rem(180px);
+    // top: rem(114px);
+    left: 39%;
+    top: 37.5%;
+    width: rem(270px);
+    background-color: $white;
+    border-radius: rem(5px);
+    opacity: .9;
+    padding: rem(18px) rem(22px);
+    z-index: 300;
+    display: none;
+    
+    @include tablets {
+    //     left: rem(233px);
+    //     top: rem(110px);
+            left: 43%;
+            top: 31%;
+    }
+    @include phones {
+        left: 48%;
+        top: 37%;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+    }
+}
+.hidden-menu__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(15px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+
+}
+.hidden-menu__picture {
+    width: rem(43px);
+    height: rem(45px);
+}
+.hidden-menu__pic {
+    width: 100%;
+    height: 100%;
+
+    &-red {
+        fill: #e25028;
+    }
+    &-green {
+        fill: #8ac03e;
+    }
+    &-yellow {
+        fill: #f8b43a;
+    }
+
+}
+.hidden-menu__title {
+    font-family: "UbuntuMedium";
+    font-size: rem(14px);
+    text-align: left;
+    margin-left: rem(20px);
+    margin-right: auto;
+
+}
+.hidden-menu__text {
+    font-family: "UbuntuLight";
+    font-size: rem(14px);
+    text-align: right;
+}
+

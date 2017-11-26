@@ -1,0 +1,5 @@
+.slider {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #f9b43b), color-stop(50%, #eb8c38), color-stop(80%, #A19887));
+  background: -webkit-linear-gradient(top, #f9b43b 20%, #eb8c38 50%, #A19887 80%);
+  background: -o-linear-gradient(top, #f9b43b 20%, #eb8c38 50%, #A19887 80%);
+  background: linear-gradient(to bottom, #f9b43b 20%, #eb8c38 50%, #A19887 80%); }

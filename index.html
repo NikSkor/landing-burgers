@@ -12,6 +12,16 @@
     <div class="wrapper">
         <div class="maincontent">
             <section class="section greeting">
+                    <div class="greeting__menu" id="hamburger-menu" >
+                            <ul class="greeting__menu-list">
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">почему мы</a></li>
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">меню</a></li>
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">советы</a></li>
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">кто мы</a></li>
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">свяжитесь с нами</a></li>
+                              <li class="greeting__menu__item"><a href="#" class="greeting__menu__link">контакты</a></li>
+                            </ul>
+                      </div>
                 <div class="container header__container">
                     <header class="header">
                         <div class="header__logo logo">  
@@ -32,10 +42,18 @@
                             </div>
                             <div class="nav__button">
                                 <a href="#" class="nav__link nav__order">заказать</a>
-                                <a class="nav__hamburger-menu hamburger-menu" href="">
-                                        <div class="hamburger-menu__bars"></div>
-                                </a>
+                                
                             </div>
+
+                            <div class="hamburger-menu__bars" id="hamburger-button">
+                                <div class="hamburger-menu__picture" id="hamburger-picture"><img src="./image/icon/X.png" alt="" class="hamburger-menu__pic"></div>
+                                <div class="hamburger-menu-lineblock" id="lineblock">
+                                    <span class="hamburger-menu__line" id="line_1"></span>
+                                    <span class="hamburger-menu__line" id="line_2"></span>
+                                    <span class="hamburger-menu__line" id="line_3"></span>
+                                </div>
+                            </div>
+
                         </nav>
                     </header>
                 </div>
@@ -86,6 +104,107 @@
                         </li>
                     </ul>
                 </div>
+            </section>
+            <section class="section slider">
+                <div class="arrow-block">
+                        <svg id="arrow-left" class="arrow__scroll arrow__scroll_left">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#arrow-scroll"></use>
+                            </svg>
+                </div>
+                <div class="container slider-content">
+                    <div class="slider__photo">
+                        <div class="slider__composition" id="slider__composition">
+                                <svg id="composition" class="slider__comp-pic">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#burger"></use>
+                                </svg>
+                                <h2 class="main-title composition-title">состав</h2>
+                        </div>
+                        <div class="slider__menu hidden-menu" id="hidden-menu">
+                            <ul class="hidden-menu__list">
+                                <li class="hidden-menu__item">
+                                        <div class="hidden-menu__picture">
+                                            <svg id="beef" class="hidden-menu__pic hidden-menu__pic-red">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#beef"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="hidden-menu__title">Говядина</span>
+                                        <span class="hidden-menu__text">300 г</span>
+                                </li>
+                                <li class="hidden-menu__item">
+                                        <div class="hidden-menu__picture">
+                                            <svg id="buns" class="hidden-menu__pic hidden-menu__pic-yellow">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#buns"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="hidden-menu__title">Булочки</span>
+                                        <span class="hidden-menu__text">100 г</span>
+                                </li>
+                                <li class="hidden-menu__item">
+                                        <div class="hidden-menu__picture">
+                                            <svg id="salad" class="hidden-menu__pic hidden-menu__pic-green">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#salad"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="hidden-menu__title">Зелень</span>
+                                        <span class="hidden-menu__text">70 г</span>
+                                </li>
+                                <li class="hidden-menu__item">
+                                        <div class="hidden-menu__picture">
+                                            <svg id="sauce" class="hidden-menu__pic hidden-menu__pic-red">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#sauce"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="hidden-menu__title">Соус</span>
+                                        <span class="hidden-menu__text">150 г</span>
+                                </li>
+                                <li class="hidden-menu__item">
+                                        <div class="hidden-menu__picture">
+                                            <svg id="cucumber" class="hidden-menu__pic hidden-menu__pic-green">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#cucumber"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="hidden-menu__title">Овощи</span>
+                                        <span class="hidden-menu__text">200 г</span>
+                                </li>
+                                <li class="hidden-menu__item">
+                                        <div class="hidden-menu__picture">
+                                            <svg id="cheese" class="hidden-menu__pic hidden-menu__pic-yellow">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#cheese"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="hidden-menu__title">Сыр</span>
+                                        <span class="hidden-menu__text">80 г</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="./image/content/slider/burger_1.png" alt="" class="slider__pic">
+                        <div class="slider__kkal kkal">
+                                <svg id="composition-kkal" class="kkal__pic">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#kkal"></use>
+                                </svg>
+                                <h2 class="main-title composition-title kkal__text">1200</h2>
+                                <h2 class="main-title composition-title kkal__title">ккал</h2>
+                        </div>
+                    </div>
+                    <div class="slider__about">
+                        <h2 class="main-title slider__title slider__title_big">dark beef</h2>
+                        <h2 class="main-title slider__title">burger</h2>
+                        <div class="slider__text"><p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p></div>
+                        <div class="slider__order">
+                            <h2 class="main-title slider__order-title">500</h2>
+                            <h2 class="main-title slider__order-title slider__order-title_small">рублей</h2>                           
+                            <div class="nav__button slider__button">
+                                    <a href="#" class="nav__link nav__order slider__link">заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-block">
+                        <svg id="arrow-right" class="arrow__scroll arrow__scroll_right">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#arrow-scroll"></use>
+                            </svg>
+                </div>
+                
             </section>
             <section class="section team">
                 <div class="team__container">
@@ -280,62 +399,62 @@
                     <div class="form">
                         <form action="#" class="form__elem">
                             <div class="form__row">
-                                <label for="name" class="form__block">
-                                    <div class="form__block-title">Имя</div>
+                                <div class="form__block">
+                                    <label for="name" class="form__block-title">Имя</label>
                                     <input type="text" name="name" id="name" class="form__input">
-                                </label>
-                                <label for="tel" class="form__block">
-                                    <div class="form__block-title">Телефон</div>
+                                </div>
+                                <div class="form__block">
+                                    <label for="tel" class="form__block-title">Телефон</label>
                                     <input type="text" name="tel" id="tel" class="form__input">
-                                </label>
+                                </div>
                             </div>
                             <div class="form__row">
-                                <label for="street" class="form__block">
-                                    <div class="form__block-title">Улица</div>
+                                <div class="form__block">
+                                    <label for="street" class="form__block-title">Улица</label>
                                     <input type="text" name="street" id="street" class="form__input">
-                                </label>
+                                </div>
                             </div>
                             <div class="form__row">
-                                <label for="house" class="form__block">
-                                    <div class="form__block-title">Дом</div>
+                                <div class="form__block">
+                                    <label for="house" class="form__block-title">Дом</label>
                                     <input type="text" name="house" id="house" class="form__input">
-                                </label>
-                                <label for="section" class="form__block">
-                                    <div class="form__block-title">Корпус</div>
+                                </div>
+                                <div class="form__block">
+                                    <label for="section" class="form__block-title">Корпус</label>
                                     <input type="text" name="section" id="section" class="form__input">
-                                </label>
-                                <label for="room" class="form__block">
-                                    <div class="form__block-title">Квартира</div>
+                                </div>
+                                <div class="form__block">
+                                    <label for="room" class="form__block-title">Квартира</label>
                                     <input type="text" name="room" id="room" class="form__input">
-                                </label>
-                                <label for="floor" class="form__block form__block_floor">
-                                    <div class="form__block-title">Этаж</div>
+                                </div>
+                                <div class="form__block form__block_floor">
+                                    <label for="floor" class="form__block-title">Этаж</label>
                                     <input type="text" name="floor" id="floor" class="form__input">
-                                </label>
+                                </div>
                             </div>
                         </form>
                         <form action="#" class="form__elem">
                             <div class="form__row">
-                                <label for="text" class="form__block">
-                                    <div class="form__block-title form__block-title_rew">Комментарий</div>
+                                <div class="form__block">
+                                    <label for="text" class="form__block-title form__block-title_rew">Комментарий</label>
                                     <textarea name="text" id="text"  class="form__textarea form__input"></textarea>
-                                </label>
+                                </div>
                             </div>
                             <div class="form__row form__row_radio">
-                                <label for="radio-change" class="form__block form__block_radio">
+                                <div class="form__block form__block_radio">
                                     <input type="radio" class="input-radio" name="radio" id="radio-change">
-                                    <div class="form__block-title form__block-title-radio">Потребуется сдача</div>
-                                </label>
-                                <label for="radio-card" class="form__block form__block_radio">
+                                    <label for="radio-change" class="form__block-title form__block-title-radio">Потребуется сдача</label>
+                                </div>
+                                <div class="form__block form__block_radio">
                                     <input type="radio" class="input-radio" name="radio" id="radio-card">
-                                    <div class="form__block-title form__block-title-radio">Оплата по карте</div>
-                                </label>
+                                    <label for="radio-card" class="form__block-title form__block-title-radio">Оплата по карте</label>
+                                </div>
                             </div>
                             <div class="form__row form__row_checkbox">
-                                <label for="check" class="form__block form__block_checkbox">
+                                <div class="form__block form__block_checkbox">
                                     <input type="checkbox" class="input-checkbox" name="check" id="check">
-                                    <div class="form__block-title form__block-title-checkbox">Не перезванивать</div>
-                                </label>
+                                    <label for="check" class="form__block-title form__block-title-checkbox">Не перезванивать</label>
+                                </div>
                             </div>
                             <div class="form__row form__row_buttons">
                                 <a href="#" class="nav__link nav__order nav__link_form">заказать</a>
@@ -361,28 +480,28 @@
                             <div class="footer__social social">
                                 <ul class="social__list">
                                     <li class="social__item">
-                                        <a href="https://vk.com" class="social__link_icon" target="_blank">
+                                        <a href="https://vk.com" class="social__link" target="_blank">
                                             <svg id="vk" class="social__link_icon">
                                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#vk"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a href="https://fb.com" class="social__link_icon" target="_blank">
+                                        <a href="https://fb.com" class="social__link" target="_blank">
                                             <svg id="fb" class="social__link_icon">
                                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#fb"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a href="https://instagramm.com" class="social__link_icon" target="_blank">
+                                        <a href="https://instagramm.com" class="social__link" target="_blank">
                                             <svg id="inst" class="social__link_icon">
                                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#inst"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a href="https://twitter.com" class="social__link_icon" target="_blank">
+                                        <a href="https://twitter.com" class="social__link" target="_blank">
                                             <svg id="twitter" class="social__link_icon">
                                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./image/icon/sprite/sprite.svg#twitter"></use>
                                             </svg>
@@ -408,5 +527,6 @@
             </div>
         </div>
 </div>
+<script src="./JS/main.js"></script>
 </body>
 </html>
